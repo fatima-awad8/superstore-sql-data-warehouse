@@ -154,19 +154,19 @@ Full column-level detail: [`docs/Data_Dictionary.md`](docs/Data_Dictionary.md).
 
 ## 11. KPI Definitions
 
-| KPI | Formula |
-|---|---|
-| Total Sales | `SUM(Sales)` |
-| Total Profit | `SUM(Profit)` |
-| Profit Margin % | `SUM(Profit) / SUM(Sales)` |
-| Total Orders | `COUNT(DISTINCT OrderID)` |
-| Total Customers | `COUNT(DISTINCT CustomerKey)` |
-| Total Quantity Sold | `SUM(Quantity)` |
-| Average Order Value | `SUM(Sales) / COUNT(DISTINCT OrderID)` |
-| Average Sales per Customer | `SUM(Sales) / COUNT(DISTINCT CustomerKey)` |
-| Average Profit per Order | `SUM(Profit) / COUNT(DISTINCT OrderID)` |
-| YoY Sales Growth | `(ThisYearSales - LastYearSales) / LastYearSales` |
-| YoY Profit Growth | `(ThisYearProfit - LastYearProfit) / LastYearProfit` |
+| KPI | Formula | Value (this dataset) |
+|---|---|---|
+| Total Sales | `SUM(Sales)` | $501,239.89 |
+| Total Profit | `SUM(Profit)` | $39,706.36 |
+| Profit Margin % | `SUM(Profit) / SUM(Sales) * 100` | 7.92% |
+| Total Orders | `COUNT(DISTINCT OrderID)` | 1,175 |
+| Total Customers | `COUNT(DISTINCT CustomerKey)` | 629 |
+| Total Quantity Sold | `SUM(Quantity)` | 8,780 |
+| Average Order Value | `SUM(Sales) / COUNT(DISTINCT OrderID)` | $426.59 |
+| Average Sales per Customer | `SUM(Sales) / COUNT(DISTINCT CustomerKey)` | $796.88 |
+| Average Profit per Order | `SUM(Profit) / COUNT(DISTINCT OrderID)` | $33.79 |
+| YoY Sales Growth | `(ThisYearSales - LastYearSales) / LastYearSales` | 2014: -0.9% · 2015: +43.3% · 2016: -0.2% |
+| YoY Profit Growth | `(ThisYearProfit - LastYearProfit) / LastYearProfit` | 2014: +2,071.6% (very small 2013 base) · 2015: +69.8% · 2016: -62.1% |
 
 ## 12. Analytical Reports
 
